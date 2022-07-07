@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {nanoid} from 'nanoid'
 
-function DateTimePretty(props) {
-    return (
-        <h1>{props.date}</h1>
-    )
+function DateTimePretty(DateTime) {
+    return function(props) {
+        return
+    }
 }
 
 function DateTime(props) {
