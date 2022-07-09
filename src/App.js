@@ -1,20 +1,16 @@
 import React, {useState} from 'react';
 import {nanoid} from 'nanoid'
+import DateTime from './DateTime'
 
-function DateTimePretty(DateTime) {
+function DateTimePretty(component) {
+    const C = component
     return function(props) {
-        return
+        return (
+            <C number="42" {...props}/>
+        )
     }
 }
-
-function DateTime(props) {
-    return (
-        // <p className="date">{props.date}</p>
-        <p className="date">
-            <DateTimePretty date={props.date} />
-        </p>
-    )
-}
+//<DateTimePretty date={props.date} />
 
 function Video(props) {
     return (
